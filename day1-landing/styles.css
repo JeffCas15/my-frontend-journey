@@ -1,0 +1,125 @@
+:root{
+    --bg-color: #ddf6f6;
+    --box-color: #D7E3E3;
+    --main-color: #005B67;
+    --text-color: #333333;
+    --light-text: #FFFFFF;
+    --footer-color:#A6C1C1;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+body{ /*using this to keep the footer in the bottom*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main{ /*using this to keep the footer in the bottom*/
+    flex: 1;
+}
+
+/*header styles*/
+
+.header{
+    background-color: var(--main-color);
+    font-family: var(--font-heading);
+    padding: 2rem;
+    color: var(--light-text);
+}
+
+.header_nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_nav_logo{
+    font-size: 2.35rem;
+}
+
+.header_nav_options{
+    display: flex;
+    justify-content: space-evenly;
+    width: 16em;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--light-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+a:hover{
+    font-weight: 800;
+}
+
+/*about section*/
+
+.about{
+   padding: 1rem;
+}
+
+.about_title{
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+.about_core{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_img{
+    width: 40%;
+    border-radius: 12%;
+}
+
+.about_text{
+    font-size: 1.1rem;
+    font-family: var(--font-body);
+    margin-left: 1rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+/*Contact us section*/
+
+.contactUs{
+    background-color: var(--footer-color);
+    padding: 1rem;
+}
+
+.contactUs_title{
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+}
+
+.contactUs_text{
+    font-size: 1.1rem;
+    font-family: var(--font-body);
+    margin-left: 1rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.contactUs_form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactUs_form_item{
+    display: flex;
+    flex-direction: row;
+}

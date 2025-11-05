@@ -3,14 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
         <title>My landing</title>
     </head>
 
     <body>
-        <header>
-            <nav>
-                <h1>My Landing</h1>
-                <ul>
+        <header class="header">
+            <nav class="header_nav">
+                <h1 class="header_nav_logo">My Landing</h1>
+                <ul class="header_nav_options">
                     <li><a href="#about">About</a></li>
                     <li><a href="#contactUs">Contact Us</a></li>
                 </ul>
@@ -18,19 +20,33 @@
         </header>
 
         <main>
-            <section id="about">
-                <h2>About</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam veniam eligendi reiciendis itaque officia labore qui saepe quasi sapiente autem, odio non dolorem nobis accusamus expedita? Iusto voluptas fugiat praesentium.</p>
+            <section class="about" id="about">
+                <h2 class="about_title">About</h2>
+                <div class="about_core">
+                    <img src="img/9078655.png" alt="woman in an office using headsets to work" class="about_img">
+                    <p class="about_text">En My Landig, somos el socio estratégico que tu negocio necesita para escalar. Nos especializamos en Business Process Outsourcing (BPO), transformando tus tareas operativas complejas en procesos ágiles, eficientes y rentables. <br><br>
+
+Nuestra misión es clara: permitirte enfocarte al 100% en tu core business, mientras nuestro equipo de expertos gestiona y optimiza tus flujos de trabajo utilizando tecnología de vanguardia e Inteligencia Artifical.<br><br>
+
+Elegirnos es elegir máxima eficiencia, reducción de costos significativa y un camino directo hacia el crecimiento sostenible.</p>
+                </div>
             </section>
 
-            <section id="contactUs">
-                <h2>Contact Us</h2>
-                <p>Reach out to us and we will be in contact within 24 hours</p>
-                <form>
-                    <label for="fname">First Name:</label>
-                    <input type="text" id="fname" name="fname">
-                    <label for="lname">Last Name:</label>
-                    <input type="text" id="lname" name="lname">
+            <section class="contactUs" id="contactUs">
+                <h2 class="contactUs_title">Contact Us</h2>
+                <p class="contactUs_text">Reach out to us and we will be in contact within 24 hours</p>
+                <form class="contactUs_form">
+                    <div class="contactUs_form_item">
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname">
+                    </div>
+
+                    <div class="contactUs_form_item">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname">
+                    </div>
+
+                    
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email">
                     <label for="teamZise">Team size</label>
