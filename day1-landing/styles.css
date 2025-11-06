@@ -114,12 +114,83 @@ a:hover{
     color: var(--text-color);
 }
 
+
+/*form styles*/
+
 .contactUs_form{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-body);
+    color: var(--text-color);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/*fname and lname sections fields*/
+.contactUs_form_row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7%;
+        
+}
+
+.contactUs_form_row1_box{
     display: flex;
     flex-direction: column;
 }
 
-.contactUs_form_item{
+.short_input{
+    height: 2.8vh;
+    width: 30vh;
+    border-radius: 6px;
+    border: none;
+    font-family: var(--font-body);
+    padding-left: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/*email field*/
+
+.contactUs_form_row2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 13.5em;
+    padding-right: 13.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.email_input{
+    height: 2.8vh;
+    border-radius: 6px;
+    border: none;
+    font-family: var(--font-body);
+    padding-left: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/*timesize and location fields*/
+
+.contactUs_form_row3{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 7%;
 }
+
+
+.contactUs_form_row3_box{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.short_input, .email_input:focus{
+    box-shadow: 0 0 7px rgba(1, 86, 69, 0.4); 
+}
+

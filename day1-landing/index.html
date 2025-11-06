@@ -36,32 +36,45 @@ Elegirnos es elegir máxima eficiencia, reducción de costos significativa y un 
                 <h2 class="contactUs_title">Contact Us</h2>
                 <p class="contactUs_text">Reach out to us and we will be in contact within 24 hours</p>
                 <form class="contactUs_form">
-                    <div class="contactUs_form_item">
-                        <label for="fname">First Name:</label>
-                        <input type="text" id="fname" name="fname">
+                    <div class="contactUs_form_row1">
+                        <div class="contactUs_form_row1_box">
+                            <label for="fname" >First name:</label>
+                            <input class="short_input" type="text" id="fname" name="fname" placeholder="First name">        
+                        </div>
+
+                        <div class="contactUs_form_row1_box">
+                        <label for="lname">Last name:</label>        
+                        <input class="short_input" type="text" id="lname" name="lname" placeholder="Last name">
+                        </div>
                     </div>
 
-                    <div class="contactUs_form_item">
-                        <label for="lname">Last Name:</label>
-                        <input type="text" id="lname" name="lname">
+                    <div class="contactUs_form_row2">
+                        <label for="email">Email:</label>
+                        <input class="email_input" type="email" id="email" name="email" placeholder="email@mail.com">
                     </div>
-
                     
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                    <label for="teamZise">Team size</label>
-                    <select id="teamZise" name="teamZise">
-                        <option  value="1-25">1-25</option>
-                        <option  value="25-50">25-50</option>
-                        <option  value="50-75">50-75</option>
-                        <option  value="75-100">75-100</option>
-                    </select>
-                    <label for="location">Location</label>
-                    <select id="location" name="location">
-                        <option value="AU">Australia</option>
-                        <option value="US">United States</option>
-                        <option value="CA">Canada</option>
-                    </select>
+                    <div class="contactUs_form_row3">
+                        <div class="contactUs_form_row3_box">
+                            <label for="teamZise">Team size</label>
+                            <select id="teamZise" name="teamZise">
+                                <option  value="1-25">1-25</option>
+                                <option  value="25-50">25-50</option>
+                                <option  value="50-75">50-75</option>
+                                <option  value="75-100">75-100</option>
+                            </select>
+                        </div>
+
+                        <div class="contactUs_form_row3_box" >
+                            <label for="location">Location</label>
+                            <select id="location" name="location">
+                                <option value="AU">Australia</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    
                     <label for="message">Message</label>
                     <textarea id="message" name="message">Leave us a message...</textarea>
                     <input type="radio" id="policy" name="policy">
