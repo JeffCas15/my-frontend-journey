@@ -124,6 +124,7 @@ a:hover{
     color: var(--text-color);
     margin: 1rem;
     padding: 1rem;
+    font-size: 0.9rem;
 }
 
 /*fname and lname sections fields*/
@@ -132,44 +133,62 @@ a:hover{
     flex-direction: row;
     justify-content: center;
     gap: 7%;
+    font-weight: 600;
         
 }
 
 .contactUs_form_row1_box{
     display: flex;
     flex-direction: column;
+    gap: 0.3rem;
 }
 
 .short_input{
-    height: 2.8vh;
-    width: 30vh;
+    height: 3.5vh;
+    width: 25vw;
+    min-width: 200px;
     border-radius: 6px;
     border: none;
     font-family: var(--font-body);
     padding-left: 6px;
     outline: none;
     transition: border-color 0.3s ease;
+}
+
+.short_input:focus{
+    box-shadow: 0 0 7px rgba(1, 86, 69, 0.4); 
 }
 
 /*email field*/
 
 .contactUs_form_row2{
     display: flex;
-    flex-direction: column;
-    padding-left: 13.5em;
-    padding-right: 13.5em;
     margin-top: 1em;
     margin-bottom: 1em;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.contactUs_form_row2_box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
 }
 
 .email_input{
-    height: 2.8vh;
+    height: 3.5vh;
+    width: 57.2vw;
+    min-width: 440px;
     border-radius: 6px;
     border: none;
     font-family: var(--font-body);
     padding-left: 6px;
     outline: none;
     transition: border-color 0.3s ease;
+}
+
+.email_input:focus{
+    box-shadow: 0 0 7px rgba(1, 86, 69, 0.4); 
 }
 
 /*timesize and location fields*/
@@ -178,19 +197,129 @@ a:hover{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 7%;
+    gap: 8%;
+    font-weight: 600;
 }
 
 
 .contactUs_form_row3_box{
     display: flex;
     flex-direction: column;
+    gap: 0.3rem;
 }
 
+select{
+    height: 3.5vh;
+    width: 25vw;
+    min-width: 200px;
+    border-radius: 6px;
+    border: none;
+    font-family: var(--font-body);
+    padding-left: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    color:var(--text-color);
+    
+}
 
-
-
-.short_input, .email_input:focus{
+select:focus{
     box-shadow: 0 0 7px rgba(1, 86, 69, 0.4); 
 }
 
+option {
+  color: var(--text-color);
+  background-color: #fff;
+}
+
+option:checked {
+  background-color: var(--box-color);
+  color: var(--text-color);
+}
+
+/*comment field*/
+
+.contactUs_form_row4{
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    justify-content: center;
+    font-weight: 600;
+}
+.contactUs_form_row4_box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+textarea{
+    height: 12.5vh;
+    width: 57.2vw;
+    min-width: 440px;
+    border-radius: 6px;
+    border: none;
+    font-family: var(--font-body);
+    padding-left: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus{
+    box-shadow: 0 0 7px rgba(1, 86, 69, 0.4); 
+}
+
+
+/*Privacy policy field*/
+
+.form_policy{
+    display: flex;
+    justify-content: center;
+    margin: 0.2rem;
+}
+
+.form_policy_box{
+    width: 58.5vw;
+    min-width: 440px;
+}
+
+#radio{
+    accent-color: var(--main-color);
+}
+
+
+/*button*/
+
+.button{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+button{
+    background-color: #333333;
+    border-radius: 8px;
+    border-style: none;
+    color: var(--light-text);
+    font-family: var(--font-body);
+    font-weight: bold;
+    height: 3.5vh;
+    width: 58vw;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover{
+    background-color: #000000;
+}
+
+button:focus{
+    box-shadow: 0 0 7px rgba(1, 86, 69, 0.4);
+}
+
+footer{
+    padding: 2rem;
+    background-color: var(--main-color);
+    font-family: var(--font-heading);
+    color: var(--light-text);
+    text-align: center;
+}
