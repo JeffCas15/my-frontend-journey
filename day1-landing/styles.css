@@ -281,7 +281,7 @@ textarea:focus{
     min-width: 440px;
 }
 
-#radio{
+#policy{
     accent-color: var(--main-color);
 }
 
@@ -304,11 +304,12 @@ button{
     height: 3.5vh;
     width: 58vw;
     outline: none;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 
 button:hover{
+    transform: translateY(-1px);
     background-color: #000000;
 }
 
