@@ -1,0 +1,113 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        background-color: #F9FAFB;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      main{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      img{
+        max-width: 60px;
+        margin: 5rem 0rem 1.5rem 0rem;
+      }
+
+      h1{
+        font-size: 3rem;
+        font-weight: 600;
+      }
+
+      h3{
+        font-size: 1.25rem;
+        font-weight: 400;
+        max-width: 55vw;
+        text-align: center;
+        color: #6C727F;
+        margin: 1rem 0rem 3rem 0rem;
+      }
+
+      .form_box{
+        box-shadow: 0px 12px 8px #E5E7EB;
+        padding: 1.5rem;
+        border-radius: 12px;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        width: 90vw;
+        max-width: 560px;
+      }
+
+      .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: #FFFFFF;
+      }
+
+      input[type=email]{
+        border-radius: 12px;
+        height: 3.5rem;
+        border: 1.5px solid #E5E7EB;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+
+      ::placeholder{
+        color: #394150;
+        text-align: center;
+      }
+
+      button{
+        border-radius: 12px;
+        background-color: #284BCE;
+        border: none;
+        color: #FFFFFF;
+        height: 3.5rem;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      p{
+        font-size: 0.8rem;
+        color: #394150;
+        background-color: #FFFFFF;
+      }
+
+
+      @media (max-width: 650px){
+        h1{
+          font-size: 2rem;
+        }
+
+        h3{
+          font-size: 1rem;
+          max-width: 80vw;
+          margin: 1rem 0rem 4rem 0rem;
+        }
+      }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
