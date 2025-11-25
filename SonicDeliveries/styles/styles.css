@@ -1,0 +1,116 @@
+:root{
+    --textColor:#7a8896;
+    --textColorForm: #004b7c;
+    --headerColor: #0b2545;
+    --headeerFont: "Poppins", sans-serif;
+    --textFont: "Inter", sans-serif;
+    --fontSizeHeader: 3rem;
+    --fontSizeSubtitle: 1.5rem;
+    --fontSizeText: 1.2rem;
+    --backgroundColor:  #f6f9fb;
+    --formBackgroundColor: #ffffff;
+    --buttonColor: #0077d9;
+    --buttonTextColor: #ffffff;
+    --buttonHoverColor: #1e8de8df;
+
+}
+
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: var(--headeerFont);
+        background-color:var(--backgroundColor);
+      }
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+img{
+    max-height: auto;
+    max-width: 30vw;
+}
+
+.headerText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerText_title{
+    font-size: var(--fontSizeHeader);
+    color:var(--headerColor);
+}
+
+.headerText_subtitle{
+    font-size: var(--fontSizeSubtitle);
+    font-weight: 550;
+    color: var(--textColor);
+}
+
+main{ 
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.choise_box{
+    width: 50vw;
+    max-height: 270px;
+    max-width: 800px;
+    min-width: 400px;
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--formBackgroundColor);
+    border-radius: 12px;
+}
+
+.choise_box_text{
+    font-size: var(--fontSizeText);
+    color: var(--textColor);
+    background-color: var(--formBackgroundColor);
+    font-weight: 500;
+}
+
+.button_container{
+    display: flex;
+    min-width: 100%;
+    justify-content: space-evenly;
+    background-color: var(--formBackgroundColor);
+}
+
+.choise_box_button{
+    background-color: #0077d9;
+    color: var(--buttonTextColor);
+    text-decoration: none;
+    padding: 1.2rem;
+    font-size: var(--fontSizeText);
+    border-radius: 8px;
+}
+
+.choise_box_button:hover{
+    background-color: var(--buttonHoverColor);
+}
+
+footer{
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: small;
+}
