@@ -9,16 +9,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Place a Delivery Order</h1>
-        <h2>Share pickup and dropoff detals, and we'll dispatch a driver in minutes.</h2>
+    <header class="headerText">
+        <h1 class="headerText_title">Place a Delivery Order</h1>
+        <h2 class="headerText_subtitle">Share pickup and dropoff details, and we'll dispatch a driver in minutes.</h2>
     </header>
 
     <main>
 
         <form>
-            <label></label>
+            <h3>Pick up from</h3>
+            <input type="text" id="pickup_name" placeholder="Full name of pickup point/person">
+            <input type="tel" id="pickup_phone" placeholder="Pickup's point/person phone number">
+            <input type="text" id="pickup_address" placeholder="Full address of pickup point/person">
         </form>
+
+        <form>
+            <h3>Deliver to</h3>
+            <input type="text" id="deliverto_name" placeholder="Full name of recepient">
+            <input type="tel" id="delivertp_phone" placeholder="Recepient's phone number">
+            <input type="email" id="deliverto_email" placeholder="Recepient's email address (Optional)">
+            <input type="text" id="deliverto_address" placeholder="Full address of recepient">
+            <input type="date" id="deliverto_date">
+            <input type="time" id="delivery_time">
+            <input type="text" id="delivery_notes" placeholder="Delivery notes">
+            <input type="number" id="Delivery tips">
+        </form>
+
+        <button>Place order</button>
 
     </main>
 

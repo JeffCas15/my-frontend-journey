@@ -11,7 +11,7 @@
     --formBackgroundColor: #ffffff;
     --buttonColor: #0077d9;
     --buttonTextColor: #ffffff;
-    --buttonHoverColor: #1e8de8df;
+    --buttonHoverColor: #c9eeff;
 
 }
 
@@ -42,10 +42,13 @@ img{
     max-width: 30vw;
 }
 
+/*general styles for headers*/
+
 .headerText{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
 }
 
 .headerText_title{
@@ -59,6 +62,8 @@ img{
     color: var(--textColor);
 }
 
+
+/*Main page styles*/
 main{ 
     flex: 1;
     width: 100%;
@@ -79,6 +84,7 @@ main{
     justify-content: space-evenly;
     background-color: var(--formBackgroundColor);
     border-radius: 12px;
+    box-shadow: 0px 5px 8px #7a8896;
 }
 
 .choise_box_text{
@@ -102,11 +108,38 @@ main{
     padding: 1.2rem;
     font-size: var(--fontSizeText);
     border-radius: 8px;
+    transition: all 0.2s;
 }
 
 .choise_box_button:hover{
     background-color: var(--buttonHoverColor);
+    color: var(--textColorForm);
+    border: 1px solid;
+    border-color: var(--textColorForm);
+    box-shadow: 0px 2px 5px #7a8896;
 }
+
+.choise_box_button:focus{
+    background-color:  #88dbff;
+    
+}
+
+/*Styles for tracking page*/
+
+.tracking_box{
+    background-color: var(--formBackgroundColor);
+    display: flex;
+    flex-direction: column;
+}
+
+.dynamic_container{
+    background-color: var(--buttonHoverColor);
+    padding:1rem;
+    max-width: 80%;
+}
+
+
+
 
 footer{
     text-align: center;
