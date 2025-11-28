@@ -130,14 +130,67 @@ main{
     background-color: var(--formBackgroundColor);
     display: flex;
     flex-direction: column;
+    min-width: 55vw;
+    border-radius: 12px;
+    box-shadow: 0px 5px 8px var(--textColor);
+}
+
+label{
+    background-color: var(--formBackgroundColor);
+    padding: 1rem 0.5rem 0.5rem 1rem;
+    border-radius: 12px;
+}
+
+.tracking_details{
+    display: flex;
+    gap: 0.5rem;
+    background-color: var(--formBackgroundColor);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    justify-content: center;
+}
+
+#deliveryID{
+    border-radius: 8px;
+    border-style: none;
+    padding: 1em;
+    min-width: 80%;
+    flex-grow: 1;
+}
+
+#button_track{
+    background-color: #0077d9;
+    color: var(--buttonTextColor);
+    text-decoration: none;
+    width: 10%;
+    padding: 0.5rem;
+    font-size: var(--fontSizeText);
+    border-radius: 8px;
+    border-style: none;
+    transition: all 0.2s;
+}
+
+#button_track:hover{
+    background-color: var(--buttonHoverColor);
+    color: var(--textColorForm);
+    border: 1px solid;
+    border-color: var(--textColorForm);
+    box-shadow: 0px 2px 5px #7a8896;
 }
 
 .dynamic_container{
     background-color: var(--buttonHoverColor);
     padding:1rem;
-    max-width: 80%;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    min-width: 80%;
+    border-radius: 12px;
+    max-height: 80%;
 }
 
+#dynamic_text{
+    background-color: var(--buttonHoverColor);
+    font-size: small;
+    color: var(--textColor);
+}
 
 
 

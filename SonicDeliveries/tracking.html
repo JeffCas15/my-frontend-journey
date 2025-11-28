@@ -20,13 +20,13 @@
 
         <div class="tracking_box">
                 <label for="deliveryID">Delivery ID</label>
-            <form class="">
-                <input type="number" id="deliveryID">
-                <button type="submit">Track</button>
+            <form class="tracking_details">
+                <input type="number" id="deliveryID" placeholder="e.g 123456789">
+                <button type="submit" id="button_track">Track</button>
             </form>
 
             <section class="dynamic_container">
-                <p>Waiting for a Delivery ID. Once availabe you'll see something like "Rider on the way * ETA 18:12"</p>
+                <p id="dynamic_text">Waiting for a Delivery ID. Once availabe you'll see something like "Rider on the way * ETA 18:12"</p>
             </section>
         </div>
         
